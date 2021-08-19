@@ -1,0 +1,601 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/mackbook/ontologies/2020/10/UniTest"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/mackbook/ontologies/2020/10/UniTest">
+    <Prefix name="" IRI="http://www.semanticweb.org/mackbook/ontologies/2020/10/UniTest"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Academic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Administrative"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Adviser"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Assistant_Professor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Associate_Professor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bachelor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Employee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Engineer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Executive_Officer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Head_Engineer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Head_of_Office"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Higher_Executive_Officer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Master"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Non-Academic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#People"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhD_Student"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PostDoc"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Principal_Engineer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Professor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Researcher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Senior_Adviser"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Senior_Engineer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Senior_Executive_Officer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Senior_Researcher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Srudent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stipendiat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Technical"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSupervised"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bob"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hamed"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#PhD_Student"/>
+        <Class IRI="#Stipendiat"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Academic"/>
+        <Class IRI="#Employee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Academic"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Administrative"/>
+        <Class IRI="#Employee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Administrative"/>
+        <Class IRI="#Non-Academic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Administrative"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Adviser"/>
+        <Class IRI="#Administrative"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Adviser"/>
+        <Class IRI="#Employee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Adviser"/>
+        <Class IRI="#Non-Academic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Adviser"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Assistant_Professor"/>
+        <Class IRI="#Academic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Assistant_Professor"/>
+        <Class IRI="#Employee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Assistant_Professor"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Associate_Professor"/>
+        <Class IRI="#Academic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Associate_Professor"/>
+        <Class IRI="#Employee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Associate_Professor"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bachelor"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bachelor"/>
+        <Class IRI="#Srudent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Employee"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Engineer"/>
+        <Class IRI="#Employee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Engineer"/>
+        <Class IRI="#Non-Academic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Engineer"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Engineer"/>
+        <Class IRI="#Technical"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Executive_Officer"/>
+        <Class IRI="#Administrative"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Executive_Officer"/>
+        <Class IRI="#Employee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Executive_Officer"/>
+        <Class IRI="#Non-Academic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Executive_Officer"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Head_Engineer"/>
+        <Class IRI="#Employee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Head_Engineer"/>
+        <Class IRI="#Non-Academic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Head_Engineer"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Head_Engineer"/>
+        <Class IRI="#Technical"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Head_of_Office"/>
+        <Class IRI="#Administrative"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Head_of_Office"/>
+        <Class IRI="#Employee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Head_of_Office"/>
+        <Class IRI="#Non-Academic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Head_of_Office"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Higher_Executive_Officer"/>
+        <Class IRI="#Administrative"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Higher_Executive_Officer"/>
+        <Class IRI="#Employee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Higher_Executive_Officer"/>
+        <Class IRI="#Non-Academic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Higher_Executive_Officer"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Master"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Master"/>
+        <Class IRI="#Srudent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Non-Academic"/>
+        <Class IRI="#Employee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Non-Academic"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhD_Student"/>
+        <Class IRI="#Academic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhD_Student"/>
+        <Class IRI="#Employee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhD_Student"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhD_Student"/>
+        <Class IRI="#Stipendiat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PostDoc"/>
+        <Class IRI="#Academic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PostDoc"/>
+        <Class IRI="#Employee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PostDoc"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Principal_Engineer"/>
+        <Class IRI="#Employee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Principal_Engineer"/>
+        <Class IRI="#Non-Academic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Principal_Engineer"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Principal_Engineer"/>
+        <Class IRI="#Technical"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Professor"/>
+        <Class IRI="#Academic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Professor"/>
+        <Class IRI="#Employee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Professor"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Researcher"/>
+        <Class IRI="#Academic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Researcher"/>
+        <Class IRI="#Employee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Researcher"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Senior_Adviser"/>
+        <Class IRI="#Administrative"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Senior_Adviser"/>
+        <Class IRI="#Employee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Senior_Adviser"/>
+        <Class IRI="#Non-Academic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Senior_Adviser"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Senior_Engineer"/>
+        <Class IRI="#Employee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Senior_Engineer"/>
+        <Class IRI="#Non-Academic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Senior_Engineer"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Senior_Engineer"/>
+        <Class IRI="#Technical"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Senior_Executive_Officer"/>
+        <Class IRI="#Administrative"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Senior_Executive_Officer"/>
+        <Class IRI="#Employee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Senior_Executive_Officer"/>
+        <Class IRI="#Non-Academic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Senior_Executive_Officer"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Senior_Researcher"/>
+        <Class IRI="#Academic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Senior_Researcher"/>
+        <Class IRI="#Employee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Senior_Researcher"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Srudent"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stipendiat"/>
+        <Class IRI="#Academic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stipendiat"/>
+        <Class IRI="#Employee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stipendiat"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stipendiat"/>
+        <Class IRI="#PhD_Student"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Technical"/>
+        <Class IRI="#Employee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Technical"/>
+        <Class IRI="#Non-Academic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Technical"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Academic"/>
+        <NamedIndividual IRI="#Alice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Employee"/>
+        <NamedIndividual IRI="#Alice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#People"/>
+        <NamedIndividual IRI="#Alice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Researcher"/>
+        <NamedIndividual IRI="#Alice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Senior_Researcher"/>
+        <NamedIndividual IRI="#Alice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Academic"/>
+        <NamedIndividual IRI="#Bob"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Employee"/>
+        <NamedIndividual IRI="#Bob"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#People"/>
+        <NamedIndividual IRI="#Bob"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PhD_Student"/>
+        <NamedIndividual IRI="#Bob"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Stipendiat"/>
+        <NamedIndividual IRI="#Bob"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Academic"/>
+        <NamedIndividual IRI="#Hamed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Employee"/>
+        <NamedIndividual IRI="#Hamed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#People"/>
+        <NamedIndividual IRI="#Hamed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PhD_Student"/>
+        <NamedIndividual IRI="#Hamed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Stipendiat"/>
+        <NamedIndividual IRI="#Hamed"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasID"/>
+        <NamedIndividual IRI="#Alice"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSupervised"/>
+        <NamedIndividual IRI="#Alice"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasID"/>
+        <NamedIndividual IRI="#Bob"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasID"/>
+        <NamedIndividual IRI="#Hamed"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasID"/>
+        <Class IRI="#People"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasName"/>
+        <Class IRI="#People"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSupervised"/>
+        <Class IRI="#Academic"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSupervised"/>
+        <Class IRI="#Employee"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSupervised"/>
+        <Class IRI="#People"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasID"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSupervised"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S1</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Researcher"/>
+                <Variable IRI="#x"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasSupervised"/>
+                <Variable IRI="#x"/>
+                <Variable IRI="#n"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="#n"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Senior_Researcher"/>
+                <Variable IRI="#x"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
